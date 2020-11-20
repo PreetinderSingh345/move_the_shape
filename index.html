@@ -1,0 +1,111 @@
+<html>
+    <head>
+
+        <title>Move The Shape</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- above is the link to the external stylesheet -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <!-- above is the link to use font awesome CDN -->
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- meta tag for adjusting the content according to the device width -->
+
+    </head>
+
+    <body>
+
+        <!-- heading -->
+
+        <div id="heading-container">
+
+            <!-- heading -->
+
+            <div id="heading">Move The Shape</div>
+
+            <!-- shape speed input button instructions container -->
+
+            <div id="shape-speed-input-button-instructions">            
+                
+                <!-- select shape container -->
+                
+                <div id="select-shape" class="shape-speed-input-button-instructions-styling">
+
+                    <!-- select shape heading -->
+
+                    <label for="select-shape" id="select-shape-heading">Shape</label>
+
+                    <!-- select shape list -->
+
+                    <select id="select-shape-list">
+                                                       
+                        <option value="circle">circle</option>         
+                        <option value="square">square</option>
+                        <option value="rectangle">rectangle</option>
+                        <option value="eclipse">eclipse</option>
+
+                    </select>
+
+                </div>
+
+                <!-- to indicate flow -->
+
+                <div>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+
+                <!-- speed input -->
+
+                <input id="speed-input" type="number" placeholder="Pixels to move / keypress(default 1)" class="shape-speed-input-button-instructions-styling">
+
+                <!-- to indicate flow -->
+
+                <div>
+                    <i class="fas fa-angle-right arrow"></i>
+                </div>
+
+                <!-- shape speed button -->
+
+                <div id="shape-speed-button" class="shape-speed-input-button-instructions-styling">Submit</div>         
+                
+                <!-- instructions button -->
+
+                <div id="instructions-button" class="shape-speed-input-button-instructions-styling">
+
+                    <!-- instructions heading -->
+
+                    <div id="instructions-heading">Instructions</div>
+
+                    <!-- instructions -->
+
+                    <div id="instructions">
+
+                        <div>w - up</div>
+                        <div>s - down</div>
+                        <div>a - left</div>
+                        <div> d - right</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- shape container -->
+
+        <div id="shape-container">
+
+            <!-- shape -->
+
+            <div id="shape" style="top: 1; left: 1; height: 100px; width: 100px; border-radius: 50%;"></div>
+
+        </div>
+        
+        <script type="text/javascript" src="./script.js"></script>
+        <!-- above is the link to the external js file -->
+
+    </body>
+</html>

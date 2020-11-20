@@ -1,0 +1,259 @@
+/* body */
+
+body{
+            
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color: azure;
+    min-height: 500px;
+    min-width: 200px;
+
+}
+
+/* heading container */
+
+#heading-container{
+
+    height: 18vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* heading */
+
+#heading{
+
+    color: darkslategrey;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* shape speed input button instructions */
+
+#shape-speed-input-button-instructions{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.2rem;
+
+}
+
+/* shape speed input button instructions styling*/
+
+.shape-speed-input-button-instructions-styling{
+
+    width: 20%;
+    padding: 2px;       
+    border-radius: 20px; 
+    color: darkslategrey;
+    border: 2px outset darkslategrey;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* select shape */
+
+#select-shape{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;      
+    align-items: center;
+    background-color: rgb(245, 236, 226);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* adjusting the select shape container*/
+
+@media only screen and (max-width: 780px){
+
+    body #select-shape{
+        flex-direction: column;
+    }
+
+}
+
+/* adjusting the height of heading and shape container and more*/
+
+@media only screen and (max-width: 560px){
+
+    body #select-shape{
+        flex-direction: row;
+    }
+
+    body #heading-container{
+        height: 40vh;
+    }
+
+    body #shape-speed-input-button-instructions{
+        flex-direction: column;
+    }
+
+    body #shape-container{
+        height: 50vh;
+    }
+
+    body .shape-speed-input-button-instructions-styling{
+        width: 90%;
+    }
+
+    body #speed-input{
+        width: 90%;
+    }
+
+    body .arrow{
+        transform: rotateZ(90deg);
+    }
+
+}
+
+/* adjusting the size of the heading */
+
+@media only screen and (max-width: 390px){
+
+    body #heading{
+        font-size: 2rem;
+    }
+
+}
+
+#select-shape:hover{
+
+    box-shadow: 0 0 4px 4px rgb(162, 207, 236);
+
+}
+
+/* select shape list */
+
+#select-shape-list{
+  
+    background-color: pink;
+    border: 2px solid darkslategrey;
+
+}
+
+/* speed input */
+
+#speed-input{
+    
+    width: 28%;
+    padding: 5px;    
+    background-color: rgb(200, 248, 248);
+    outline: none;        
+
+}
+
+#speed-input:focus{
+
+    box-shadow: 0 0 4px 4px rgb(162, 207, 236);
+
+}
+
+/* shape speed button */
+
+#shape-speed-button{
+
+    background-color: rgb(192, 252, 192);
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#shape-speed-button:hover{
+
+    box-shadow: 0 0 4px 4px rgb(162, 207, 236);
+
+}
+
+/* instructions button */
+
+#instructions-button{
+
+    background-color: rgb(247, 194, 174);
+    text-align: center;
+    cursor: pointer;    
+    max-height: 22px;
+    z-index: 1;
+    margin: 10px;
+
+}
+
+#instructions-button:hover{
+
+    box-shadow: 0 0 4px 4px rgb(162, 207, 236);
+
+}
+
+/* instructions list */
+
+#instructions{
+   
+    display: none;
+    opacity: 0;
+    margin: 10px;    
+    border-radius: 10px;
+    border: 2px dashed darkslategrey;
+    transition: opacity 0.3s ease-in-out;
+    background-color: lightgoldenrodyellow;
+
+}
+
+#instructions div{
+
+    text-transform: uppercase;
+
+}
+
+/* shape container */
+
+#shape-container{
+
+    position: relative;
+    height: 75vh;
+    width: inherit;
+    border: 4px solid darkslategrey;    
+    box-shadow: 0 0 4px 4px darkslategrey;
+    background-image: linear-gradient(to top right, lightblue, skyblue);
+
+}
+
+/* shape */
+
+#shape{
+
+    position: absolute;         
+    background-color: darkcyan;
+
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+
+    height: 10px;    
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategrey;
+}
